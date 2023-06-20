@@ -1,0 +1,63 @@
+/* 마진과 패팅을 없애고, 모두 border-box로 바꿔주는 코드*/
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-weight: 600;
+    animation-name: colors;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: large;
+}
+table{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 7px #000000;
+}
+td{
+    border: 2px solid black;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cancle{
+    background-color: #cf0000;
+}
+.math, .equle{
+    background-color: #3c3c3c;
+    color: white;
+}
+.comma{
+    background-color: orange;
+}
+.result{
+    text-align: end;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+
+@keyframes colors{
+    0%{
+        background-color: red;
+    }
+    20%{
+        background-color: orange;
+    }
+    40%{
+        background-color: yellow;
+    }
+    60%{
+        background-color: green;
+    }
+    80%{
+        background-color: blue;
+    }
+}
